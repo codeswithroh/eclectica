@@ -90,18 +90,17 @@ text {
 
 .homepage-button-appear {
     width: fit-content;
-    height: 5em;
-    background: linear-gradient(to top, rgba(118, 7, 209, 0.493),rgb(122, 8, 214));
+    /* height: 5em; */
+    background: linear-gradient(to bottom, rgba(118, 7, 209, 0.493),rgb(108, 63, 211));
     color: white;
     letter-spacing: 0.2em;
     position: absolute;
-    bottom: 13em;
+    bottom: 14em;
     right: 0;
     left: 0;
-    padding: 0em 4em;
-    margin: auto;
+    padding: 1em 4em;
+    margin:auto;
     transform-style: preserve-3d;
-    /* transform: rotateX(90deg); */
     font-family: 'Pangolin', cursive;
     font-size:1rem;
     animation: appear 8s linear forwards;
@@ -109,20 +108,28 @@ text {
 
 .homepage-button {
     width: fit-content;
-    height: 5em;
-    background: linear-gradient(to top, rgba(118, 7, 209, 0.493),rgb(122, 8, 214));
+    /* height: 5em; */
+    background: linear-gradient(to bottom, rgba(118, 7, 209, 0.493),rgb(108, 63, 211));
     color: white;
     letter-spacing: 0.2em;
     position: absolute;
-    bottom: 13em;
+    bottom: 14em;
     right: 0;
     left: 0;
-    padding: 0em 4em;
+    padding: 1em 4em;
     margin: auto;
     transform-style: preserve-3d;
     transition: 1s;
     font-family: 'Pangolin', cursive;
     font-size:1rem;
+    animation: audience 1s linear infinite;
+}
+
+@media screen and (max-width: 400px) {
+    .homepage-button,
+    .homepage-button-appear{
+        bottom:15em;
+    }
 }
 
 .homepage-button:hover {
@@ -198,5 +205,22 @@ text {
     }
     100% {
        background-position: bottom 0em right 0;
+    }
+}
+@keyframes audience {
+    0% {
+        transform: translateY(1em);
+    }
+    25% {
+        transform: translateY(0em);
+    }
+    50% {
+        transform: translateY(1em);
+    }
+    75% {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(1em);
     }
 }
