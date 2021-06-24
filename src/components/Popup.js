@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Popup.css";
 export function Pop1() {
   return (
@@ -6,7 +5,7 @@ export function Pop1() {
       <div className='popup'>
         <div className='popup_content'>
           <div>
-            <img src='https://picsum.photos/200' alt='image'></img>
+            <img src='https://picsum.photos/200' alt='decoration'></img>
           </div>
           <div>
             <h2>Teachers</h2>
@@ -19,7 +18,7 @@ export function Pop1() {
         </div>
         <div className='popup_content'>
           <div>
-            <img src='https://picsum.photos/200' alt='image'></img>
+            <img src='https://picsum.photos/200' alt='decoration'></img>
           </div>
           <div>
             <h2>Students</h2>
@@ -42,7 +41,7 @@ export function Pop2() {
         <div className='popup-row'>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/100' alt='image'></img>
+              <img src='https://picsum.photos/100' alt='decoration'></img>
             </div>
             <div>
               <h2>Club1</h2>
@@ -51,7 +50,7 @@ export function Pop2() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/100' alt='image'></img>
+              <img src='https://picsum.photos/100' alt='decoration'></img>
             </div>
             <div>
               <h2>Club2</h2>
@@ -62,7 +61,7 @@ export function Pop2() {
         <div className='popup-row'>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/100' alt='image'></img>
+              <img src='https://picsum.photos/100' alt='decoration'></img>
             </div>
             <div>
               <h2>Club3</h2>
@@ -71,7 +70,7 @@ export function Pop2() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/100' alt='image'></img>
+              <img src='https://picsum.photos/100' alt='decoration'></img>
             </div>
             <div>
               <h2>Club4</h2>
@@ -82,7 +81,7 @@ export function Pop2() {
         <div className='popup-row'>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/100' alt='image'></img>
+              <img src='https://picsum.photos/100' alt='decoration'></img>
             </div>
             <div>
               <h2>Club5</h2>
@@ -91,7 +90,7 @@ export function Pop2() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/100' alt='image'></img>
+              <img src='https://picsum.photos/100' alt='decoration'></img>
             </div>
             <div>
               <h2>Club6</h2>
@@ -111,7 +110,7 @@ export function Pop3() {
         <div className='popup-row'>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event1</h2>
@@ -120,7 +119,7 @@ export function Pop3() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event2</h2>
@@ -129,7 +128,7 @@ export function Pop3() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event3</h2>
@@ -140,7 +139,7 @@ export function Pop3() {
         <div className='popup-row'>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event4</h2>
@@ -151,7 +150,7 @@ export function Pop3() {
         <div className='popup-row'>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event5</h2>
@@ -160,7 +159,7 @@ export function Pop3() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event6</h2>
@@ -169,7 +168,7 @@ export function Pop3() {
           </div>
           <div className='popup-col'>
             <div>
-              <img src='https://picsum.photos/80' alt='image'></img>
+              <img src='https://picsum.photos/80' alt='decoration'></img>
             </div>
             <div>
               <h2>Event7</h2>
