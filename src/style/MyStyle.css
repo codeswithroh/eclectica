@@ -103,7 +103,7 @@ text {
     transform-style: preserve-3d;
     font-family: 'Pangolin', cursive;
     font-size:1rem;
-    animation: appear 8s linear forwards;
+    animation: audience 10s linear forwards;
 }
 
 .homepage-button {
@@ -122,7 +122,7 @@ text {
     transition: 1s;
     font-family: 'Pangolin', cursive;
     font-size:1rem;
-    animation: audience 1s linear infinite;
+    animation: appear 3s linear infinite;
 }
 
 @media screen and (max-width: 400px) {
@@ -143,6 +143,7 @@ text {
     font-weight: bolder;
     transform:scale(1.1);
     letter-spacing: 0.3rem;
+    border-radius: 50%;
 }
 
 @keyframes blob {
@@ -166,28 +167,19 @@ text {
 
 @keyframes appear {
     0% {
-        transform: rotateX(90deg);
-        opacity: 0;
+        transform: translateX(0em);
     }
-    25% {
-        transform: rotateX(70deg);
-        bottom: 3em;
-        opacity: .25;
+    25%{
+        transform: translateX(2em);
     }
-    50% {
-        transform: rotateX(50deg);
-        bottom: 7em;
-        opacity: .5;
+    50%{
+        transform: translateX(0em);
     }
     75% {
-        transform: rotateX(30deg);
-        bottom: 10em;
-        opacity: .75;
+        transform: translateX(-2em);
     }
     100% {
-        transform: rotateX(0deg);
-        bottom: 13em;
-        opacity: 1;
+        transform: translateX(0em);
     }
 }
 @keyframes party {
@@ -209,9 +201,17 @@ text {
 }
 @keyframes audience {
     0% {
-        transform: translateY(1em);
+        transform: scale(0);
+        opacity: 0;
     }
-    25% {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    /* 25% {
         transform: translateY(0em);
     }
     50% {
@@ -222,5 +222,5 @@ text {
     }
     100% {
         transform: translateY(1em);
-    }
+    } */
 }
