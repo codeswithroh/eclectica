@@ -193,6 +193,10 @@
         transform: rotateY(180deg) translateZ(320px);
     }
 
+    /* .e {
+        transform: rotateY(240deg) translateZ(320px);
+    } */
+
     .f {
         transform: rotateY(240deg) translateZ(320px);
     }
@@ -211,7 +215,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width:5em;
-    height: 4em;
+    height: 5em;
     background-position: center;
 }
 
@@ -263,7 +267,6 @@
 
 .sponsor-heading {
     border-right: 2px solid white;
-    padding:1em 0;
     z-index: 2;
     background-color: black;
     display: flex;
@@ -278,7 +281,6 @@
 .sponsor-content {
     gap: 6em;
     transition: 1s;
-    padding:1em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,32 +322,48 @@
     place-items: center;
     color: white;
     transition: 0.5s;
+    animation: fade 0.5s linear forwards;
+    opacity: 0;
 }
 
 .child1 {
     /* right:5em; */
-    background:rgb(236, 12, 206);
+    right:6em;
+    background-image: url('http://picsum.photos/100');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid purple;
+}
+
+.main3 {
+    bottom: 5em;
+    right:5em;
+    width: 6em;
+    height: 6em;
+    background:rgb(146, 12, 236);
 }
 
 .child2 {
-    top:5em;
-    right:0;
+    bottom: 1.5em;
+    right:6em;
     background:rgb(236, 12, 206);
+    background-image: url('http://picsum.photos/100');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid purple;
 }
 
-.child3 {
-    bottom:0;
-    /* right:5em; */
-    background:rgb(236, 12, 206);
+.item2child1 {
+    bottom: 5em;
+    right:5em;
+    width: 6em;
+    height: 6em;
+    background:rgb(236, 12, 206);  
+    background-image: url('http://picsum.photos/100');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid purple; 
 }
-
-.child1:hover,
-.child2:hover,
-.child3:hover {
-    color: rgb(236, 12, 206);
-    background: white;
-}
-
 
 @media screen and (max-width:500px) {
     .sponsor-heading>h1 {
@@ -385,6 +403,14 @@
         font-size: 0.6rem;
         z-index: 5;
     }
+}
+
+.back-button {
+    position: absolute;
+    top:2em;
+    left:2em;
+    color: white;
+    z-index: 5;
 }
 
 
@@ -462,5 +488,23 @@
     }
     100% {
         transform: translateX(20em);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
     }
 }
