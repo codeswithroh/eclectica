@@ -74,11 +74,12 @@ export default function Event() {
     setClick2(false);
     setClick1(false);
     setClick(false);
+    setautoRotate(true);
   };
 
   const autoRotation = (e) => {
     // e.preventDefault();
-    setDegree(degree - 60);
+    setDegree(degree + 60);
     // setDegree(0);
   };
 

@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <Link to="/events">
       	<div className={isDisplay ?'homepage-button-appear':'homepage-button' }>
-      	  <h1>Dig In</h1>
+      	  <h1 style={{fontSize:'1rem',}}>Dig In</h1>
       	</div>
       </Link>
     </div>

@@ -91,29 +91,35 @@ text {
 .homepage-button-appear {
     width: fit-content;
     /* height: 5em; */
-    background: linear-gradient(to bottom, rgba(118, 7, 209, 0.493),rgb(108, 63, 211));
+    /* background: linear-gradient(to bottom, rgba(118, 7, 209, 0.493),rgb(108, 63, 211)); */
+    background-image: url('../assets/button.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: white;
     letter-spacing: 0.2em;
     position: absolute;
-    bottom: 14em;
+    bottom: 4.5em;
     right: 0;
     left: 0;
     padding: 1em 4em;
     margin:auto;
     transform-style: preserve-3d;
     font-family: 'Pangolin', cursive;
-    font-size:1rem;
+    font-size:2rem;
     animation: audience 10s linear forwards;
 }
 
 .homepage-button {
     width: fit-content;
     /* height: 5em; */
-    background: linear-gradient(to bottom, rgba(118, 7, 209, 0.493),rgb(108, 63, 211));
+    /* background: linear-gradient(to bottom, rgba(118, 7, 209, 0.493),rgb(108, 63, 211)); */
+    background-image: url('../assets/button2.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: white;
     letter-spacing: 0.2em;
     position: absolute;
-    bottom: 14em;
+    bottom: 4.5em;
     right: 0;
     left: 0;
     padding: 1em 4em;
@@ -121,32 +127,32 @@ text {
     transform-style: preserve-3d;
     transition: 1s;
     font-family: 'Pangolin', cursive;
-    font-size:1rem;
+    font-size:2rem;
     animation: appear 3s linear infinite;
 }
 
 @media screen and (max-width: 400px) {
     .homepage-button,
     .homepage-button-appear{
-        bottom:15em;
+        bottom:5em;
     }
 }
 
 .homepage-button:hover {
-    background-image: url('../assets/crackers.gif');
-    background-position: bottom -8em right 0;
-    background-size: cover;
+    background-image: url('../assets/button2.gif');
+    /* background-position: bottom -8em right 0; */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     color: pink;
     text-shadow: 3px 3px 1px black;
     animation: party 1s linear forwards;
     font-weight: bolder;
-    transform:scale(1.1);
+    transform:scale(2);
     letter-spacing: 0.3rem;
-    border-radius: 50%;
+    border-radius: 0%;
 }
 
-@keyframes blob {
+/* @keyframes blob {
     25% {
         d: path("M 90 210 C 90 180 110 160 130 160 C 160 160 180 140 200 130 C 230 120 270 100 290 140 C 310 170 340 100 360 140 C 370 160 390 180 390 210 C 390 240 380 290 350 280 C 330 270 300 280 280 290 C 260 300 230 300 220 290 C 200 270 160 310 140 280 C 130 260 90 240 90 210 "
             );
@@ -163,9 +169,9 @@ text {
             );
         transform: rotate(5deg);
     }
-}
+} */
 
-@keyframes appear {
+/* @keyframes appear {
     0% {
         transform: translateX(0em);
     }
@@ -181,8 +187,8 @@ text {
     100% {
         transform: translateX(0em);
     }
-}
-@keyframes party {
+} */
+/* @keyframes party {
     0% {
         background-position: bottom -8em right 0;
     }
@@ -198,7 +204,7 @@ text {
     100% {
        background-position: bottom 0em right 0;
     }
-}
+} */
 @keyframes audience {
     0% {
         transform: scale(0);
@@ -222,5 +228,5 @@ text {
     }
     100% {
         transform: translateY(1em);
-    } */
-}
+    }*/
+} 
