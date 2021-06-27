@@ -118,6 +118,16 @@
     justify-content: center;
 }
 
+.disable {
+    pointer-events: none;
+    cursor:not-allowed;
+}
+
+#disable {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .next {
     right: 2em;
 }
@@ -308,6 +318,7 @@
     height: 15em;
     position: relative;
     inset: 0;
+    z-index: 5;
     /* background: black; */
 }
 
@@ -324,6 +335,7 @@
     transition: 0.5s;
     animation: fade 0.5s linear forwards;
     opacity: 0;
+    z-index: 5;
 }
 
 .child1 {
@@ -333,6 +345,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid purple;
+    z-index: 5;
 }
 
 .main3 {
@@ -341,6 +354,7 @@
     width: 6em;
     height: 6em;
     background:rgb(146, 12, 236);
+    z-index: 5;
 }
 
 .child2 {
@@ -351,6 +365,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid purple;
+    z-index: 5;
 }
 
 .item2child1 {
@@ -362,7 +377,8 @@
     background-image: url('http://picsum.photos/100');
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px solid purple; 
+    border: 1px solid purple;
+    z-index: 5; 
 }
 
 @media screen and (max-width:500px) {
@@ -411,6 +427,7 @@
     left:2em;
     color: white;
     z-index: 5;
+    cursor: pointer;
 }
 
 
