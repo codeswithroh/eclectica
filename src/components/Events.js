@@ -1,4 +1,4 @@
-// todo: make the floating button
+// todo: stop the rotation on click of the icons
 
 import React, { useState } from "react";
 import "./Events.css";
@@ -20,6 +20,12 @@ export default function Event() {
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
+
+  // disabling buttons
+  const [controlDisable, setControlDisable]= useState(false);
+  const [disable,setDisable]= useState(false);
+  const [disable1,setDisable1]= useState(false);
+  const [disable2,setDisable2]= useState(false);
 
 
   const handleChildClick = (e) => {
@@ -45,16 +51,37 @@ export default function Event() {
     e.preventDefault();
     setClick1(true);
     setClick(true);
+    setControlDisable(true);
+    setDisable(true);
+    setautoRotate(false);
+    // this is done to stop the autoRotation to complete the last iteration
+    setTimeout(()=>(
+      setDegree(degree)
+    ),1000);
   };
   const handleFloat2 = (e) => {
     e.preventDefault();
     setClick2(true);
     setClick(true);
+    setControlDisable(true);
+    setDisable1(true);
+    setautoRotate(false);
+    // this is done to stop the autoRotation to complete the last iteration
+    setTimeout(()=>(
+      setDegree(degree)
+    ),1000);
   };
   const handleFloat3 = (e) => {
     e.preventDefault();
     setClick3(true);
     setClick(true);
+    setControlDisable(true);
+    setDisable2(true);
+    setautoRotate(false);
+    // this is done to stop the autoRotation to complete the last iteration
+    setTimeout(()=>(
+      setDegree(degree)
+    ),1000);
   };
 
   const handleNext = (e) => {
@@ -74,6 +101,9 @@ export default function Event() {
     setClick2(false);
     setClick1(false);
     setClick(false);
+    setDisable(false);
+    setDisable1(false);
+    setDisable2(false);
     setautoRotate(true);
   };
 
@@ -95,6 +125,7 @@ export default function Event() {
 
   return (
     <div className='events'>
+
       {/* popups */}
       {active ? <Pop1 /> : <></>}
       {active ? (
@@ -150,7 +181,7 @@ export default function Event() {
           className='carousel'
         >
           {/* Item 1 */}
-          <div onClick={(e) => handleFloat(e)} className='item a'>
+          <div onClick={(e) => handleFloat(e)} className={disable1 ?'item a disable':'item a'} id={disable2 ? 'disable':''}>
             <div className='floating-button'>
               <div className='floating-button-container'>
                 {click1 ? (
@@ -186,7 +217,7 @@ export default function Event() {
           </div>
 
           {/* Item 3 */}
-          <div onClick={(e) => handleFloat3(e)} className='item c'>
+          <div onClick={(e) => handleFloat3(e)} className={disable1 ? 'item c disable':'item c'} id={disable ? 'disable':''}>
             <div className='floating-button'>
               <div className='floating-button-container'>
                 {click3 ? (
@@ -224,7 +255,7 @@ export default function Event() {
           </div> */}
 
           {/* Item 6 */}
-          <div onClick={(e) => handleFloat2(e)} className='item f'>
+          <div onClick={(e) => handleFloat2(e)} className={disable2 ?'item f disable':'item f'} id={disable ? 'disable':''}>
             <div className='floating-button'>
               <div className='floating-button-container'>
                 {click2 ? (
@@ -256,10 +287,10 @@ export default function Event() {
           </div>
         </div>
       </div>
-      <div className='next' onClick={(e) => handleNext(e)}>
+      <div className={controlDisable ? 'next disable': 'next'} onClick={(e) => handleNext(e)}>
         <i className='fa fa-chevron-right fa-2x'></i>
       </div>
-      <div className='prev' onClick={(e) => handlePrev(e)}>
+      <div className={controlDisable ? 'prev disable': 'prev'} onClick={(e) => handlePrev(e)}>
         <i className='fa fa-chevron-left fa-2x'></i>
       </div>
       {/* sponsors */}
