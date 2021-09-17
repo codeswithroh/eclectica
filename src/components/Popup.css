@@ -79,6 +79,41 @@
     color: white;
 }
 
+.about_us {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.about_us_toggle {
+    flex:2;
+    border-right: 2px solid white;
+    padding-right:0.5em;
+    text-align: center;
+}
+
+.about_us_content {
+    flex:8;
+}
+
+.teachers {
+    margin-bottom: 1em;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    padding:0.5em;
+    cursor: pointer;
+}
+
+.students {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.about_us_content p {
+    max-width: 20em;
+    margin:1em 0;
+}
 
 @keyframes pop {
     0% {
